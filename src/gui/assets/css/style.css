@@ -1,0 +1,134 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+body,
+.input-plain,
+.infobox,
+.printer,
+.repl {
+    background-color: #222;
+    color: #bbb;
+    font-family: Consolas, Helvetica, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.3em;
+
+    box-sizing: border-box;
+}
+
+html,
+body,
+.repl {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    opacity: 1;
+    position: relative;
+    width: 100%;
+
+    -webkit-transition: opacity 200ms ease-in-out;
+}
+.repl.hover {
+    opacity: 0.8;
+}
+
+.repl:after {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+    content: 'Drop to load this file ...';
+    display: block;
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 15px;
+    height: 80px;
+    line-height: 80px;
+    opacity: 1;
+    padding: 20px;
+    position: absolute;
+        left: 50%;
+        top: 50%;
+    text-align: center;
+    width: 200px;
+
+    -webkit-transform: translate(-50%, -500%);
+    -webkit-transition: -webkit-transform 400ms 200ms ease-in-out;
+}
+.repl.hover:after {
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.printer {
+    display: block;
+    border-bottom: 1px solid #444;
+    height: 80%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+    width: 100%;
+}
+.infobox {
+    background: rgba(0,0,0,.2);
+    font-family: Helvetica, Verdana, Arial, sans-serif;
+    font-size: 10px;
+    height: 200px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 8px;
+    position: absolute;
+        right: 0;
+        bottom: 0;
+    width: 300px;
+    z-index: 500;
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform 400ms ease-in-out;
+}
+.infobox.hide {
+    -webkit-transform: translate3d(0, 200% ,0);
+}
+
+.line {
+    display: block;
+}
+.raw {
+    color: #66d9ef;
+}
+.error {
+    color: #f92672;
+}
+
+.input-plain,
+.input-ace {
+    border: none;
+    display: block;
+    height: auto;
+    height: 20%;
+    outline: none;
+    resize: none;
+    width: 100%;
+}
+.input-plain { padding: 20px; }
+.editor-ace .input-plain { display: none; }
+.editor-plain .input-ace { display: none; }
+
+
+/* Let's get this party started */ 
+::-webkit-scrollbar { width: 14px; } 
+
+/* Track */ 
+::-webkit-scrollbar-track {
+    background: #333;
+    box-shadow: inset 3px 0 6px rgba(0,0,0,0.3);
+    width: 14px;
+} 
+
+/* Handle */ 
+::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 10px;
+    /*box-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
+
+    /* width wird ignoriert ... */
+    border: 3px solid transparent;
+    background-clip: content-box;
+} 

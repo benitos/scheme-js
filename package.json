@@ -1,0 +1,30 @@
+{
+  "name": "scheme-js",
+  "version": "0.0.1",
+  "description": "Scheme-Implementation für Design und Implementation fortgeschrittener Programmiersprachen",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha --recursive --ui bdd --reporter spec test/"
+  },
+  "dependencies": {
+    "colors": "latest",
+    "mocha": "latest",
+    "chai": "latest"
+  },
+  "repository": "",
+  "author": "br036",
+  "license": "BSD",
+  "devDependencies": {
+  },
+  "main": "src/gui/index.html",
+  "window": {
+    "title": "scheme.js",
+    "icon": "assets/logo.png",
+    "toolbar": false,
+    "position": "center",
+    "width": 800,
+    "height": 600,
+    "min_width": 400,
+    "min_height": 300
+  }
+}
