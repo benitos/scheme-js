@@ -57,7 +57,7 @@ Mit der Eingabe von `:q` kann sowohl die CLI als auch die GUI beendet werden.
 
 
 # Testing
-Für alle Komponenten wurden Tests erstellt, die mit Hilfe des Testing-Frameworks [Mocha](http://visionmedia.github.io/mocha/) und der BDD/TDD-Assertion Bibliothek [Chai](http://chaijs.com/) getestet werden können. Mocha und Chai werden bei der Installation (`npm install`) automatisch mit installiert. Die Tests können dann einfach durch den Aufruf von `npm test` im Projekt-Verzeichnis oder über `mocha --recursive --ui bdd --reporter spec test/EINZELTESTFILE.js` ausgeführt werden.
+Für alle Komponenten wurden Tests erstellt, die mit Hilfe des Testing-Frameworks [Mocha](http://mochajs.org/) und der BDD/TDD-Assertion Bibliothek [Chai](http://chaijs.com/) getestet werden können. Mocha und Chai werden bei der Installation (`npm install`) automatisch mit installiert. Die Tests können dann einfach durch den Aufruf von `npm test` im Projekt-Verzeichnis oder über `mocha --recursive --ui bdd --reporter spec test/EINZELTESTFILE.js` ausgeführt werden.
 
 
 
